@@ -12,8 +12,8 @@ namespace ExercicioClass {
             Number = number;
             Holder = holder;
         }
-        public BankAccount(int number, string holder, double balance) : this(number, holder) {
-            Balance = balance;
+        public BankAccount(int number, string holder, double initialBalance) : this(number, holder) {
+            Deposit(initialBalance);
         }
 
         public void Deposit(double amount) {
