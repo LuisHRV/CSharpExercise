@@ -6,7 +6,6 @@ namespace Exercicio3 {
         public double Price;
         public int Amount;
 
-
         public double StockValue () {
             return Price * Amount; 
         }
@@ -17,6 +16,9 @@ namespace Exercicio3 {
 
         public void RemoveAmount(int removeQuantity) {
             Amount = Amount - removeQuantity;
+        }
+
+        public Product() {
         }
 
         public override string ToString() {
