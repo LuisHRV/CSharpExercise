@@ -24,12 +24,12 @@ namespace Exercicio2
                 char rorc = char.Parse(Console.ReadLine());
                 Console.Write("Color (Black/Red/Green/Blue): ");
                 Color color = Enum.Parse<Color>(Console.ReadLine());
-                if(rorc =='r' || rorc == 'R')
+                if (rorc == 'r' || rorc == 'R')
                 {
-                Console.Write("Width: ");
-                double width = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                Console.Write("Height: ");
-                double height = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    Console.Write("Width: ");
+                    double width = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                    Console.Write("Height: ");
+                    double height = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                     list.Add(new Rectangle(width, height, color));
                 }
                 else
@@ -41,10 +41,10 @@ namespace Exercicio2
                 Console.WriteLine();
                 Console.WriteLine("Shape areas: ");
                 foreach (Shape shape in list)
-                {
+
                     Console.WriteLine(shape.Area().ToString("F2", CultureInfo.InvariantCulture));
-                }
             }
         }
     }
 }
+
